@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Laska Game</title>
+  </head>
+  <body>
+    <!-- ECRAN DACCEUIL -->
+    <div id="welcome-screen" class="container">
+      <h1>Choissisez le bon chemin</h1>
+      <button id="start-btn">Commencer!</button>
+      <h1>Utiliser <img id="arrow-img" src="./images/arrowbtns.png" /> traverser le pont.</h1>
+      <h3>Sautez à la case souhaité</h3>
+    </div>
+
+    <!-- ECRAN DU JEU -->
+    <div class="container">
+      <h2 id="scoreh2">SCORE: <span id="score">0</span></h2>
+      <canvas id="game-canvas" width="600" height="800"></canvas>
+    </div>
+
+    <!-- ECRAN GAME OVER  -->
+    <div id="gameover-screen" class="container">
+      <h2>Tu as choissis la mauvaise case trop de fois</h2>
+      <!-- <h2>Your score:<span id="finalScore">0</span></h2> -->
+      <button id="restart-btn">Rejouer?</button>
+    </div>
+
+    <!-- ECRAN GAGNANT -->
+
+    <div id="winning-screen" class="container">
+      <h2>Bravo! Tu atteint l'autre coté</h2>
+      <!-- <h2>Your score:<span id="finalScore">0</span></h2> -->
+      <button id="play-again-btn">Rejouer?</button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/bridge.js"></script>
+    <script src="./scripts/hearts.js"></script>
+  </body>
+</html>
